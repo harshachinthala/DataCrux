@@ -688,7 +688,7 @@ Keep your response concise but informative (3-5 bullet points)."""
                 with gr.Column(scale=2):
                     gr.Markdown("### 💬 Ask Questions About Your Data")
                     
-                    chatbot = gr.Chatbot(
+                    chatbot = gr.Chatbot(type="tuples",
                         label="DataCrux Assistant",
                         height=400
                     )
