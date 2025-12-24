@@ -4,7 +4,7 @@ title: DataCrux
 emoji: 📊
 colorFrom: blue
 colorTo: purple
-sdk: gradio
+sdk: docker
 sdk_version: 5.9.1
 app_file: app.py
 pinned: false
