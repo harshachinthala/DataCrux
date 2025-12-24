@@ -767,7 +767,6 @@ Keep your response concise but informative (3-5 bullet points)."""
         
         # Launch using defaults - Hugging Face handles the rest
         interface.launch(
-            show_api=True,
             server_name="0.0.0.0",
             server_port=7860,
             allowed_paths=[str(settings.data_dir.resolve())] if settings.data_dir.exists() else []
