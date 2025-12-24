@@ -355,11 +355,11 @@ class ExcelRAGApp:
                 "3. Restart the application"
             )
             # Tuples format
-            chat_history.append([query, error_msg])
+            chat_history.append({"role": "user", "content": query}); chat_history.append({"role": "assistant", "content": error_msg})
             return chat_history, None
         
         if self.vector_store.get_stats().get("status") == "empty":
-            chat_history.append([query, "⚠️ Please upload an Excel file first!"])
+            chat_history.append({"role": "user", "content": query}); chat_history.append({"role": "assistant", "content": "⚠️ Please upload an Excel file first!"})
             return chat_history, None
         
         # Initialize variables to prevent UnboundLocalError
@@ -407,7 +407,7 @@ class ExcelRAGApp:
             
             if not result.get("success"):
                 error_msg = f"❌ Error: {result.get('error', 'Unknown error')}"
-                chat_history.append([query, error_msg])
+                chat_history.append({"role": "user", "content": query}); chat_history.append({"role": "assistant", "content": error_msg})
                 return chat_history, None
             
             # Extract analysis and code
@@ -503,7 +503,7 @@ class ExcelRAGApp:
             
             
             # Update chat history
-            chat_history.append([query, response_text])
+            chat_history.append({"role": "user", "content": query}); chat_history.append({"role": "assistant", "content": response_text})
             
             # CRITICAL FIX for HF Spaces: Ensure figure is properly formatted
             if chart_fig is not None:
@@ -529,7 +529,7 @@ class ExcelRAGApp:
         except Exception as e:
             logger.error(f"Error processing query: {e}", exc_info=True)
             error_msg = f"❌ Error processing query: {str(e)}"
-            chat_history.append([query, error_msg])
+            chat_history.append({"role": "user", "content": query}); chat_history.append({"role": "assistant", "content": error_msg})
             return chat_history, None
     
     def _generate_insights(
@@ -688,7 +688,7 @@ Keep your response concise but informative (3-5 bullet points)."""
                 with gr.Column(scale=2):
                     gr.Markdown("### 💬 Ask Questions About Your Data")
                     
-                    chatbot = gr.Chatbot(type="tuples",
+                    chatbot = gr.Chatbot(
                         label="DataCrux Assistant",
                         height=400
                     )
