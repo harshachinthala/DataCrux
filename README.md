@@ -18,7 +18,13 @@ Demo Link : https://huggingface.co/spaces/harshachinthala/DataCrux
 ## Architecture
 
 ```
-User Query → Gradio UI → Retriever → Vector DB (FAISS)
+                          User Query 
+                              ↓
+                          Gradio UI 
+                              ↓
+                          Retriever 
+                              ↓
+                       Vector DB (FAISS)
                               ↓
                          Top-K Chunks
                               ↓
