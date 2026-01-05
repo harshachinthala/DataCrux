@@ -5,6 +5,19 @@ An advanced Retrieval-Augmented Generation (RAG) system for analyzing Excel data
 
 Demo Link : https://huggingface.co/spaces/harshachinthala/DataCrux
 
+
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![LLM](https://img.shields.io/badge/LLM-OpenAI-success)
+![RAG](https://img.shields.io/badge/Architecture-RAG-important)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-black)
+![VectorDB](https://img.shields.io/badge/Vector%20DB-FAISS-orange)
+![Embeddings](https://img.shields.io/badge/Embeddings-HuggingFace%20%7C%20OpenAI-purple)
+![Gradio](https://img.shields.io/badge/UI-Gradio-lightgrey)
+![Plotly](https://img.shields.io/badge/Visualization-Plotly-blueviolet)
+![Excel](https://img.shields.io/badge/Data-Excel%20%7C%20CSV-green)
+![Semantic Search](https://img.shields.io/badge/Search-Semantic-yellowgreen)
+
+
 ## Features
 
 - 📊 **Excel File Support**: Upload `.xlsx`, `.xls`, and `.csv` files
