@@ -5,7 +5,7 @@ An advanced Retrieval-Augmented Generation (RAG) system for analyzing Excel data
 
 Demo Link : https://huggingface.co/spaces/harshachinthala/DataCrux
 
-
+### 🧠 Tech Stack & Skills
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![LLM](https://img.shields.io/badge/LLM-OpenAI-success)
 ![RAG](https://img.shields.io/badge/Architecture-RAG-important)
@@ -16,6 +16,8 @@ Demo Link : https://huggingface.co/spaces/harshachinthala/DataCrux
 ![Plotly](https://img.shields.io/badge/Visualization-Plotly-blueviolet)
 ![Excel](https://img.shields.io/badge/Data-Excel%20%7C%20CSV-green)
 ![Semantic Search](https://img.shields.io/badge/Search-Semantic-yellowgreen)
+![Gradio](https://img.shields.io/badge/Gradio-UI-yellow)
+![Deployment](https://img.shields.io/badge/Deployment-HuggingFace%20%7C%20Render-lightgrey)
 
 
 ## Features
