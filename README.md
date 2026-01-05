@@ -3,6 +3,8 @@
 
 An advanced Retrieval-Augmented Generation (RAG) system for analyzing Excel data through natural language queries with AI-powered insights and visualizations.
 
+Demo Link : https://huggingface.co/spaces/harshachinthala/DataCrux
+
 ## Features
 
 - 📊 **Excel File Support**: Upload `.xlsx`, `.xls`, and `.csv` files
